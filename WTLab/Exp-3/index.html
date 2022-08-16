@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title>Image experiment</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="link">
+            <a href="https://www.reddit.com/" target="_blank">
+                <img src="./img/Reddit-Logo.wine.svg" alt="reddit"/>
+            </a>
+        </div>
+        <button id="top" onclick="goToTop()">TOP</button>
+    </div>
+    <script>
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

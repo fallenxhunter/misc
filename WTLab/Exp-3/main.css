@@ -1,0 +1,36 @@
+* {
+    margin : 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    height: 145vh;
+    background-color: #000000;
+}
+
+h2  {
+    color: white;;
+}
+
+#content, a {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+button {
+    background: #155999;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 15px;
+}

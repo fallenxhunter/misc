@@ -1,0 +1,38 @@
+<html>
+    <header>
+        <title>JavaScript Assignment</title>
+    </header>
+    <body>
+        <div>
+            <form name = "form" onsubmit="return verify_form()">
+                <label for="app_no">Application No.</label>
+                <input name="app_no" id="app_no">
+                <br>
+                
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+                <br>
+                
+                <button>LOGIN</button>
+            </form>
+        </div>
+
+       <script>
+            function verify_form(){
+                let App_No = document.getElementById("app_no");
+                let Password = document.getElementById("password");
+
+                if(isNaN(App_No) || App_No < 10000 || App_No > 99999)
+                {
+                    alert("Application Number should be in range of 10000 and 99999");   
+                    return false;                
+                }
+                else if(Password.length < 8)
+                {
+                    alert("Password Must Be more than 8 Digits");
+                    return false;
+                }
+            }
+       </script>
+    </body>
+</html>

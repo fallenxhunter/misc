@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #577590;
+}
+
+#cover {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background : #577590;
+}
+
+#cover h2 {
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 75px;
+}
+
+#cover img {
+    margin: 50px;
+    width: 200px;
+}
+
+.container {
+    color: #342E37;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2% 0;
+    border-radius: 10px;
+    margin: 2% 10%;
+    background: #F2A541;
+}
+
+.campus .container {
+
+    background: #F08A4B;
+}
+
+.text {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    flex: 1;
+}
+
+.courses .container {
+    background: #77966D;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-header {
+    font-size: 20px;
+}
+
+.courses-body {
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-body .text p {
+    font-size: 15px;
+}
+
+.courses-body .image {
+    display: flex;
+    flex: 1;
+    padding: 5%;
+}
+
+.courses-body .image img {
+    width: 100%;
+}
+
+.course {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption {
+    margin: 1% 0;
+}
+
+
+.text p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.image {
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+}
+
+.image img {
+    width: 75%;
+    border-radius: 20px;
+}

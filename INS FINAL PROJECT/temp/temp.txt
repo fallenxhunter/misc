@@ -1,0 +1,4 @@
+gcc -Wall -o insFinalcl-30-31 insFinalcl-30-31.c -L/usr/lib -lssl -lcrypto
+gcc -Wall -o insFinalsr-30-31 insFinalsr-30-31.c -L/usr/lib -lssl -lcrypto
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mycert.pem -out SSL-certificate.pem

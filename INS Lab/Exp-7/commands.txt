@@ -1,0 +1,9 @@
+cat /dev/urandom | head -1 > RandomKey.bin
+xxd RandomKey.bin | head -1
+openssl enc -des-cbc -in plaintext.txt -out ciphertext.enc -nosalt -iv 0000000000000000 -K 319df2f409baee3c
+xxd -b ciphertext.enc 
+openssl enc -des-cbc -in plaintext.txt -out ciphertext.enc -nosalt -iv 0000000000000000 -K 319df2f409baee3c -a
+cat ciphertext.enc
+openssl enc -des-cbc -d -in ciphertext.enc -out recievedtext.txt -nosalt -iv 0000000000000000 -K 319df2f409baee3c -a
+cat recievedtext.txt 
+

@@ -1,0 +1,11 @@
+The plaintext is :
+Vivek Rajbhar
+enter aes-256-cbc encryption password:
+Verifying - enter aes-256-cbc encryption password:
+
+Encrypted Text is :
+:Q�G�2�h5f�D
+enter aes-256-cbc decryption password:
+
+Decrypted Text is :
+Vivek Rajbhar
